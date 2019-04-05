@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/brands/<%= @brand.id%>" method="post">
+  <input type="text" name="name" id="name" value=<%= @brand.name%>>
+  <label for="name">Name</label>
+  <input type="submit" value="Edit the brands's name">
+  <input type="hidden" name="_method" value="PUT">
+
+  <form action="/brands/<%=@brand.id%>" method="post">
+  <input type="submit" value="Delete this brand">
+  <input type="hidden" name="_method" value="DELETE">
+
+  </body>
+</html>

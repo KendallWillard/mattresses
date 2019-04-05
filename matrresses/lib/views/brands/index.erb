@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <% @brands.each do |brand| %>
+      <li>
+        <%=brand.name%> <a href="/brands/<%=brand.id%>/edit">Edit</a>
+      </li>
+      <% end %>
+    </ul>
+
+    <a href="/brands/new">Add a brand</a>
+  </body>
+</html>
